@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Boby Alex | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Tom Boby Alex - B.Tech CSE (AI & ML) Student, Problem Solver, and Aspiring Software Engineer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">TBA</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name-highlight">Tom Boby Alex</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Passionate about building innovative solutions with AI & Machine Learning
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="btn btn-secondary" id="download-resume">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Skills</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="glass-card about-card">
+                        <div class="about-intro">
+                            <h3>Hello! I'm <span class="highlight">Tom Boby Alex</span></h3>
+                            <p>
+                                A passionate second-year <strong>B.Tech Computer Science & Engineering</strong> student
+                                specializing in <strong>Artificial Intelligence & Machine Learning</strong>. I'm driven
+                                by
+                                curiosity and a desire to solve real-world problems through innovative technology
+                                solutions.
+                            </p>
+                            <p>
+                                My journey in tech has been fueled by a deep passion for programming, an eagerness to
+                                explore
+                                the frontiers of machine learning, and a commitment to continuous learning. I believe in
+                                writing clean, efficient code and building applications that make a difference.
+                            </p>
+                            <p>
+                                When I'm not coding, you'll find me exploring new technologies, contributing to
+                                open-source
+                                projects, or participating in hackathons. I'm always looking for opportunities to grow
+                                as a
+                                software professional and collaborate on exciting projects.
+                            </p>
+                        </div>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI Enthusiast</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Quick Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-timeline">
+                    <h3 class="timeline-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education Journey
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date">2024 - 2028</span>
+                                <h4>B.Tech CSE (AI & ML)</h4>
+                                <p class="timeline-institution">Christ (Deemed to be University), Kengeri Campus</p>
+                                <div class="timeline-stats-semesters">
+                                    <div class="gpa-semester">
+                                        <span class="sem-label">1st Sem</span>
+                                        <span class="sem-value">3.53 GPA</span>
+                                    </div>
+                                    <div class="gpa-semester">
+                                        <span class="sem-label">2nd Sem</span>
+                                        <span class="sem-value">3.60 GPA</span>
+                                    </div>
+                                    <div class="gpa-semester">
+                                        <span class="sem-label">3rd Sem</span>
+                                        <span class="sem-value">3.62 GPA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h4>Higher Secondary Education</h4>
+                                <p class="timeline-institution">Class 12</p>
+                                <div class="timeline-stats">
+                                    <div class="score-badge">
+                                        <span>90.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date">2021 - 2022</span>
+                                <h4>Secondary Education</h4>
+                                <p class="timeline-institution">Class 10</p>
+                                <div class="timeline-stats">
+                                    <div class="score-badge">
+                                        <span>95.3%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I know</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-description">Data analysis, ML algorithms, automation scripts</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-c"></i>
+                    </div>
+                    <h3 class="skill-name">C Programming</h3>
+                    <p class="skill-description">Systems programming, data structures implementation</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="skill-name">Data Structures</h3>
+                    <p class="skill-description">Trees, linked lists, graphs, algorithms</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML & CSS</h3>
+                    <p class="skill-description">Responsive design, modern layouts, animations</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <p class="skill-description">Database design, queries, data management</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="skill-name">Problem Solving</h3>
+                    <p class="skill-description">Analytical thinking, algorithmic solutions</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-aos="fade-up" data-project="restaurant">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-btn">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Data Structures</span>
+                        </div>
+                        <h3 class="project-title">Restaurant Menu Management</h3>
+                        <p class="project-description">
+                            A comprehensive menu management system using advanced data structures
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100" data-project="department">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-btn">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <h3 class="project-title">Department Web Portal</h3>
+                        <p class="project-description">
+                            A responsive web portal for academic department information
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200" data-project="landing">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-btn">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <h3 class="project-title">Product Landing Page</h3>
+                        <p class="project-description">
+                            A conversion-focused landing page with modern dark theme
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certifications & Awards</h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card glass-card" data-aos="flip-left">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python Programming</h3>
+                        <p>A Practical Approach</p>
+                        <span class="cert-type">Certificate</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Principles and Practice</p>
+                        <span class="cert-type">Certificate</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Hospitality Volunteer</h3>
+                        <p>Magnovite College Event</p>
+                        <span class="cert-type">Achievement</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="glass-card contact-card">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm always excited to connect with fellow developers, recruiters, and anyone
+                            interested in collaboration. Feel free to reach out!
+                        </p>
+                        <div class="contact-details">
+                            <a href="mailto:tombobya30@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Email</span>
+                                    <span class="value">tomboby30@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+918075157032" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Phone</span>
+                                    <span class="value">+91 8075157032</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/tombobyalex" target="_blank" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">LinkedIn</span>
+                                    <span class="value">linkedin.com/in/tombobyalex</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Tom-boby" target="_blank" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">GitHub</span>
+                                    <span class="value">github.com/Tom-boby</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">TBA</span>
+                    <p>Crafting digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/tombobyalex" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tombobyalex" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tombobyalex@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tom Boby Alex. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
